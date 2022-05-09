@@ -5,13 +5,12 @@ internal abstract class Mammal : Animal {
         base(legs, foodType, lifeSpan, legType) { }
 
 
-
     override internal string Breathe() {
-        return "lungs";
+        return "Lungs";
     }
     
     override internal string Delivery() {
-        return "alive";
+        return "Alive";
     }
 }
 
