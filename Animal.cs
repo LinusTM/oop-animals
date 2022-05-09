@@ -6,7 +6,8 @@ internal abstract class Animal {
     protected double lifeSpan;
     protected string legType;
 
-    protected abstract Animal() { }
+    protected Animal() {}
+
 
     protected abstract void Breathe();
     protected abstract void Delivery();
