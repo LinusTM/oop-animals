@@ -21,7 +21,7 @@ internal abstract class Animal {
         get => legType;
     }
 
-    Animal(int legs, string foodType, double lifeSpan, string legType) {
+    protected Animal(int legs, string foodType, double lifeSpan, string legType) {
         this.legs = legs;
         this.foodType = foodType;
         this.lifeSpan = lifeSpan;

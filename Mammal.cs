@@ -1,7 +1,10 @@
 namespace oop_animals;
 
 internal abstract class Mammal : Animal {
-    internal Mammal() : base(legs, foodType, lifeSpan, legType) { }
+    internal Mammal(int legs, string foodType, double lifeSpan, string legType) :
+        base(legs, foodType, lifeSpan, legType) { }
+
+
 
     override internal string Breathe() {
         return "lungs";
@@ -13,20 +16,21 @@ internal abstract class Mammal : Animal {
 }
 
 internal abstract class EvenToedUngulates : Mammal {
-    internal EvenToedUngulates() : base(4, foodType, lifeSpan, "hooves") { }
+    internal EvenToedUngulates(string foodType, double lifeSpan) :
+        base(4, foodType, lifeSpan, "hooves") { }
 
     internal override string Move() {
-        return "cum";
+        return "lorum ipsum";
     }
 
 }
 
 internal class Zebra : EvenToedUngulates {
-    internal Zebra() : base(legs, "grass", 3, legType) { }
+    internal Zebra() : base("grass", 3) { }
     
 
     internal override string Eat() {
-        return $"I'm chompin on {FoodType}";
+        return $"I'm chompin on {this.foodType}";
     }
 
     internal override string MakeSound() {
@@ -35,10 +39,10 @@ internal class Zebra : EvenToedUngulates {
 }
 
 internal class Cow : EvenToedUngulates {
-    internal Cow() : base(legs, "grass", 12, legType) {}
+    internal Cow() : base("grass", 12) {}
 
     internal override string Eat() {
-        return $"I'm chompin on {FoodType}";
+        return $"I'm chompin on {this.foodType}";
     }
 
     internal override string MakeSound() {
