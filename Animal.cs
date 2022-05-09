@@ -1,22 +1,22 @@
 namespace oop_animals;
 
 internal abstract class Animal {
-    private int legs;
+    protected int legs;
     internal int Legs {
         get => legs;
     }
 
-    private string foodType;
+    protected string foodType;
     internal string FoodType {
         get => foodType;
     }
 
-    private double lifeSpan;
+    protected double lifeSpan;
     internal double LifeSpan {
         get => lifeSpan;
     }
 
-    private string legType;
+    protected string legType;
     internal string LegType {
         get => legType;
     }

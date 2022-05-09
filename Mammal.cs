@@ -14,28 +14,34 @@ internal abstract class Mammal : Animal {
 
 internal abstract class EvenToedUngulates : Mammal {
     internal EvenToedUngulates() : base(4, foodType, lifeSpan, "hooves") { }
+
+    internal override string Move() {
+        return "cum";
+    }
+
 }
 
 internal class Zebra : EvenToedUngulates {
     internal Zebra() : base(legs, "grass", 3, legType) { }
     
-    override string Eat() {
-        return $"I'm chompin on {foodType}";
+
+    internal override string Eat() {
+        return $"I'm chompin on {FoodType}";
     }
 
-    override stirng Sound() {
+    internal override string MakeSound() {
         return "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
     }
 }
 
 internal class Cow : EvenToedUngulates {
-    internal Cow() : base(legs, "grass", 12, legType) { }
-    
-    override string Eat() {
-        return $"I'm chompin on {foodType}";
+    internal Cow() : base(legs, "grass", 12, legType) {}
+
+    internal override string Eat() {
+        return $"I'm chompin on {FoodType}";
     }
 
-    override stirng Sound() {
+    internal override string MakeSound() {
         return "moo :)";
     }
 }
