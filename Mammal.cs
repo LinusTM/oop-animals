@@ -3,11 +3,11 @@ namespace oop_animals;
 internal abstract class Mammal : Animal {
     internal Mammal() : base() { }
 
-    override string Breathe() {
+    override internal string Breathe() {
         return "lungs";
     }
     
-    override string delivery() {
+    override internal string Delivery() {
         return "alive";
     }
 }

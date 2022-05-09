@@ -28,9 +28,9 @@ internal abstract class Animal {
         this.legType = legType;
     }
 
-    internal abstract void Breathe();
-    internal abstract void Delivery();
-    internal abstract void Eat();
-    internal abstract void Move();
-    internal abstract void MakeSound();
+    internal abstract string Breathe();
+    internal abstract string Delivery();
+    internal abstract string Eat();
+    internal abstract string Move();
+    internal abstract string MakeSound();
 }
